@@ -37,10 +37,10 @@ body {
 }
 
 .dropzone--error::after {
-  content: 'Invalid file type';
+  content: 'Invalid file type, only .jpg, .jpeg, .png, .gif, .pdf are allowed';
   position: absolute;
-  left: 32%;
-  bottom: -30px;
+  left: 0%;
+  bottom: -50px;
   color: red;
 }
 
@@ -74,7 +74,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 15px 0;
+  padding: 1em 0;
   color: #fff;
   text-align: center;
   background: #000;
@@ -91,4 +91,17 @@ body {
   border-bottom: 1px solid #ccc;
   color: #ccc;
   width: 400px;
+}
+
+
+.gallery__container {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.uploaded__thumb {
+  width: 150px;
+  height: 150px;
+  margin: 0 10px 20px;
 }
