@@ -9,13 +9,18 @@ body {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 800px;
   margin: 0 auto;
   padding-top: 50px;
 }
 
+.dropzone__container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .dropzone {
-  max-width: 300px;
+  width: 300px;
   height: 300px;
   padding: 25px;
   border: 4px dashed #f3f3f3;
@@ -24,6 +29,19 @@ body {
   align-items: center;
   text-align: center;
   cursor: pointer;
+}
+
+.dropzone--error {
+  position: relative;
+  border-color: red;
+}
+
+.dropzone--error::after {
+  content: 'Invalid file type';
+  position: absolute;
+  left: 32%;
+  bottom: -30px;
+  color: red;
 }
 
 .dropzone--over {
@@ -61,4 +79,16 @@ body {
   text-align: center;
   background: #000;
   opacity: .75;
+}
+
+.info__heading {
+  margin-top: 15px;
+}
+
+.info__item {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  color: #ccc;
+  width: 400px;
 }
