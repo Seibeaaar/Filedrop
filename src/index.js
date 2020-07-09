@@ -35,7 +35,6 @@ dropZone.addEventListener('drop', e => {
       setFiles([...e.dataTransfer.files]);
     } else {
       dropZone.classList.add('dropzone--error');
-      return;
     }
   }
   dropZone.classList.remove('dropzone--over');
