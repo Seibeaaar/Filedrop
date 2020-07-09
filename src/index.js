@@ -77,7 +77,7 @@ const updateThumbnail = (dropzone, file) => {
 
 
 // Gallery section
-const gallery = document.querySelector('.gallery__container');
+const gallery = document.querySelector('.gallery');
 
 const setFiles = uploadedFiles => {
   uploadedFiles.forEach(file => {

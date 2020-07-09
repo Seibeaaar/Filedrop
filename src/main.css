@@ -95,13 +95,27 @@ body {
 
 
 .gallery__container {
-  margin-top: 80px;
+  margin: 80px 0;
+}
+
+.gallery {
   display: flex;
   flex-wrap: wrap;
+  max-height: 320px;
+  overflow-y: scroll;
 }
 
 .uploaded__thumb {
   width: 150px;
   height: 150px;
   margin: 0 10px 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
 }
